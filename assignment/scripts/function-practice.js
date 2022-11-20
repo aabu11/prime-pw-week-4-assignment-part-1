@@ -64,17 +64,18 @@ console.log(getLast());
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 
-function find(list) {
-  let value = 3;
-  for (i = 0; i < list.length; i++) {
-    if (value == list[i]) {
+function find(value, array) {
+  
+  for (i = 0; i < array.length; i++) {
+    if (value == array[i]) {
       return true;
     } else {
       return false;
     }
   }
 }
-console.log(find(array));
+console.log(find(1, [2,5,4])); 
+console.log(find(2, [2,5,4])); 
 
 // ----------------------
 // Stretch Goals
